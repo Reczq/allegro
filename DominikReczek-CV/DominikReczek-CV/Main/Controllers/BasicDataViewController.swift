@@ -56,6 +56,7 @@ class BasicDataViewController: UIViewController {
     private func prepareView() {
         customizeView()
         preparePersonalInfoButton()
+        prepareVideoButton()
         prepareContactInfoButton()
     }
 
@@ -79,6 +80,11 @@ class BasicDataViewController: UIViewController {
             castedBasicView().contactInfoButton.loadImageFromURL("https://upload.wikimedia.org/wikipedia/en/7/74/Linkin_Park_2017_logo.png", onCompletion: { [weak self] (image) in
                 guard let strongSelf = self else { return }
                 strongSelf.castedBasicView().contactInfoButton.setImage(image, for: UIControlState.normal)
+            })
+
+            castedBasicView().videoButton.loadImageFromURL("https://cdn3.iconfinder.com/data/icons/youtube-5/100/youtube_2-512.png", onCompletion: { [weak self] (image) in
+                guard let strongSelf = self else { return }
+                strongSelf.castedBasicView().videoButton.setImage(image, for: UIControlState.normal)
             })
         }
     }
@@ -108,23 +114,29 @@ class BasicDataViewController: UIViewController {
         castedBasicView().personalInfoButton.addBorder(with: buttonsPath, width: BasidDataViewSizes.borderLineWidth, color: #colorLiteral(red: 0.5556491613, green: 0.7595404983, blue: 0.008766815066, alpha: 1))
         castedBasicView().contactInfoButton.addMask(with: buttonsPath)
         castedBasicView().contactInfoButton.addBorder(with: buttonsPath, width: BasidDataViewSizes.borderLineWidth, color: #colorLiteral(red: 0.5556491613, green: 0.7595404983, blue: 0.008766815066, alpha: 1))
-
+        castedBasicView().videoButton.addMask(with: buttonsPath)
+        castedBasicView().videoButton.addBorder(with: buttonsPath, width: BasidDataViewSizes.borderLineWidth, color: #colorLiteral(red: 0.5556491613, green: 0.7595404983, blue: 0.008766815066, alpha: 1))
         castedBasicView().backgroundImageView.applyBlur(with: .dark)
+    }
+
+    func prepareVideoButton() {
+        castedBasicView().videoButton.addTarget(self, action: #selector(playVideo), for: .touchUpInside)
+    }
+
+
+    func playVideo() {
+        let videoURL = URL(string: "http://188.116.20.253/ftp/files/final.mp4")
+        let player = AVPlayer(url: videoURL!)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
     }
 
     func preparePersonalInfoButton() {
         castedBasicView().personalInfoButton.addTarget(self, action: #selector(showPersonalInfoView), for: .touchUpInside)
     }
-
-    //    func keke() {
-    //        let videoURL = URL(string: "http://188.116.20.253/ftp/files/vid.mp4")
-    //        let player = AVPlayer(url: videoURL!)
-    //        let playerViewController = AVPlayerViewController()
-    //        playerViewController.player = player
-    //        self.present(playerViewController, animated: true) {
-    //            playerViewController.player!.play()
-    //        }
-    //    }
 
     func showPersonalInfoView() {
         castedBasicView().containerView.applyBlur(with: .dark) { _ in

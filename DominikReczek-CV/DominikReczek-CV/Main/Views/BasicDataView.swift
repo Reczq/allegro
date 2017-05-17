@@ -47,6 +47,11 @@ class BasicDataView: CustomUIView {
         return label
     }()
 
+    lazy var videoButton: CustomUIButton = {
+        var button = CustomUIButton()
+        return button
+    }()
+
     lazy var personalInfoButton: CustomUIButton = {
         var button = CustomUIButton()
         return button
@@ -85,6 +90,7 @@ class BasicDataView: CustomUIView {
         containerView.addSubview(descriptionLabel)
         containerView.addSubview(personalInfoButton)
         containerView.addSubview(contactInfoButton)
+        containerView.addSubview(videoButton)
         addSubview(personalInfoPopUpView)
         addSubview(contactInfoPopUpView)
 
@@ -95,7 +101,12 @@ class BasicDataView: CustomUIView {
         super.updateConstraints()
 
         let screenWidth = self.frame.size.width
-//        let screenHeight = self.frame.size.height
+
+        videoButton.snp.updateConstraints { make in
+            make.centerX.equalTo(self)
+            make.bottom.equalTo(personalInfoButton.snp.top).offset(-50)
+            make.width.height.equalTo(50.0)
+        }
 
         backgroundImageView.snp.updateConstraints { make in
             make.edges.equalTo(self)
