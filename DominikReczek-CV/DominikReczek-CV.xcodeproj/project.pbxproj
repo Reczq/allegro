@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06A8ECD8D171C77BE1C56AFC /* Pods_DominikReczek_CVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22E370ACE2A099CD503C7BC /* Pods_DominikReczek_CVUITests.framework */; };
+		894C2E875721823430DFF82D /* Pods_DominikReczek_CVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980E8263916579FF77831D2D /* Pods_DominikReczek_CVTests.framework */; };
+		8E3399E766D7899946275E71 /* Pods_DominikReczek_CV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FE95EBCD860077CEE21712 /* Pods_DominikReczek_CV.framework */; };
+		B40CBBFD1ECC65E900B4F278 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CBBFA1ECC65E900B4F278 /* CustomUIButton.swift */; };
+		B40CBBFE1ECC65E900B4F278 /* CustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CBBFB1ECC65E900B4F278 /* CustomUIImageView.swift */; };
+		B40CBBFF1ECC65E900B4F278 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CBBFC1ECC65E900B4F278 /* CustomUIView.swift */; };
+		B40CBC031ECC662000B4F278 /* ContactInfoPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CBC011ECC662000B4F278 /* ContactInfoPopUpView.swift */; };
+		B40CBC041ECC662000B4F278 /* PersonalInfoPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CBC021ECC662000B4F278 /* PersonalInfoPopUpView.swift */; };
+		B40CBC061ECCAE3B00B4F278 /* ExperienceComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CBC051ECCAE3B00B4F278 /* ExperienceComponentView.swift */; };
+		B40FF5C21E8C126000A8636D /* ShapeShiftingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FF5C11E8C126000A8636D /* ShapeShiftingProtocol.swift */; };
+		B42111C81ECA0B9100478A66 /* ImageWithDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42111C71ECA0B9100478A66 /* ImageWithDescriptionView.swift */; };
+		B42111CA1ECA81ED00478A66 /* UILabel+SubstituteDefaultFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42111C91ECA81ED00478A66 /* UILabel+SubstituteDefaultFont.swift */; };
+		B457C1881E8C0DC90038F3A0 /* DominikReczek_CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1871E8C0DC90038F3A0 /* DominikReczek_CVTests.swift */; };
+		B457C1931E8C0DC90038F3A0 /* DominikReczek_CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1921E8C0DC90038F3A0 /* DominikReczek_CVUITests.swift */; };
+		B457C1DE1E8C0E7D0038F3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1A11E8C0E7D0038F3A0 /* AppDelegate.swift */; };
+		B457C1DF1E8C0E7D0038F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B457C1A21E8C0E7D0038F3A0 /* Assets.xcassets */; };
+		B457C1E01E8C0E7D0038F3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B457C1A31E8C0E7D0038F3A0 /* LaunchScreen.storyboard */; };
+		B457C1E21E8C0E7D0038F3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B457C1A61E8C0E7D0038F3A0 /* LaunchScreen.storyboard */; };
+		B457C1E51E8C0E7D0038F3A0 /* DescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1AA1E8C0E7D0038F3A0 /* DescriptionLabel.swift */; };
+		B457C1E71E8C0E7D0038F3A0 /* ApperableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1AD1E8C0E7D0038F3A0 /* ApperableProtocol.swift */; };
+		B457C1E81E8C0E7D0038F3A0 /* BlurableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1AE1E8C0E7D0038F3A0 /* BlurableProtocol.swift */; };
+		B457C1E91E8C0E7D0038F3A0 /* UIBezierPath+PolygonMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B01E8C0E7D0038F3A0 /* UIBezierPath+PolygonMask.swift */; };
+		B457C1EA1E8C0E7D0038F3A0 /* UIView+LoadImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B11E8C0E7D0038F3A0 /* UIView+LoadImageFromURL.swift */; };
+		B457C1EB1E8C0E7D0038F3A0 /* BasicDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B41E8C0E7D0038F3A0 /* BasicDataViewController.swift */; };
+		B457C1EC1E8C0E7D0038F3A0 /* EducationDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B51E8C0E7D0038F3A0 /* EducationDataViewController.swift */; };
+		B457C1ED1E8C0E7D0038F3A0 /* ExperienceDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B61E8C0E7D0038F3A0 /* ExperienceDataViewController.swift */; };
+		B457C1EE1E8C0E7D0038F3A0 /* HobbysDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B71E8C0E7D0038F3A0 /* HobbysDataViewController.swift */; };
+		B457C1EF1E8C0E7D0038F3A0 /* SkillsViewDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B81E8C0E7D0038F3A0 /* SkillsViewDataController.swift */; };
+		B457C1F01E8C0E7D0038F3A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1B91E8C0E7D0038F3A0 /* MainViewController.swift */; };
+		B457C1F11E8C0E7E0038F3A0 /* BasicDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1BB1E8C0E7D0038F3A0 /* BasicDataView.swift */; };
+		B457C1F21E8C0E7E0038F3A0 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1BC1E8C0E7D0038F3A0 /* EducationView.swift */; };
+		B457C1F31E8C0E7E0038F3A0 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1BD1E8C0E7D0038F3A0 /* ExperienceView.swift */; };
+		B457C1F41E8C0E7E0038F3A0 /* HobbysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1BE1E8C0E7D0038F3A0 /* HobbysView.swift */; };
+		B457C1F51E8C0E7E0038F3A0 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1BF1E8C0E7D0038F3A0 /* SkillsView.swift */; };
+		B457C1F61E8C0E7E0038F3A0 /* APIBasiclDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1C11E8C0E7D0038F3A0 /* APIBasiclDataModel.swift */; };
+		B457C1F71E8C0E7E0038F3A0 /* APIEducationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1C21E8C0E7D0038F3A0 /* APIEducationDataModel.swift */; };
+		B457C1F81E8C0E7E0038F3A0 /* APIExperienceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1C31E8C0E7D0038F3A0 /* APIExperienceDataModel.swift */; };
+		B457C1F91E8C0E7E0038F3A0 /* APIHobbysDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1C41E8C0E7D0038F3A0 /* APIHobbysDataModel.swift */; };
+		B457C1FA1E8C0E7E0038F3A0 /* APIResultModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1C51E8C0E7D0038F3A0 /* APIResultModelProtocol.swift */; };
+		B457C1FB1E8C0E7E0038F3A0 /* APISkillsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1C61E8C0E7D0038F3A0 /* APISkillsDataModel.swift */; };
+		B457C1FF1E8C0E7E0038F3A0 /* APIBasicDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1CF1E8C0E7D0038F3A0 /* APIBasicDataManager.swift */; };
+		B457C2001E8C0E7E0038F3A0 /* APIEducationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D01E8C0E7D0038F3A0 /* APIEducationDataManager.swift */; };
+		B457C2011E8C0E7E0038F3A0 /* APIExeperienceDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D11E8C0E7D0038F3A0 /* APIExeperienceDataManager.swift */; };
+		B457C2021E8C0E7E0038F3A0 /* APIHobbysDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D21E8C0E7D0038F3A0 /* APIHobbysDataManager.swift */; };
+		B457C2031E8C0E7E0038F3A0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D31E8C0E7D0038F3A0 /* APIManager.swift */; };
+		B457C2041E8C0E7E0038F3A0 /* APIManagerProtocol+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D41E8C0E7D0038F3A0 /* APIManagerProtocol+Request.swift */; };
+		B457C2051E8C0E7E0038F3A0 /* APIManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D51E8C0E7D0038F3A0 /* APIManagerProtocol.swift */; };
+		B457C2061E8C0E7E0038F3A0 /* APISkillsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D61E8C0E7D0038F3A0 /* APISkillsDataManager.swift */; };
+		B457C2071E8C0E7E0038F3A0 /* APIBasicDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D81E8C0E7D0038F3A0 /* APIBasicDataParser.swift */; };
+		B457C2081E8C0E7E0038F3A0 /* APIEducationDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1D91E8C0E7D0038F3A0 /* APIEducationDataParser.swift */; };
+		B457C2091E8C0E7E0038F3A0 /* APIExperienceDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1DA1E8C0E7D0038F3A0 /* APIExperienceDataParser.swift */; };
+		B457C20A1E8C0E7E0038F3A0 /* APIHobbysDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1DB1E8C0E7D0038F3A0 /* APIHobbysDataParser.swift */; };
+		B457C20B1E8C0E7E0038F3A0 /* APIResultParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1DC1E8C0E7D0038F3A0 /* APIResultParserProtocol.swift */; };
+		B457C20C1E8C0E7E0038F3A0 /* APISkillsDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457C1DD1E8C0E7D0038F3A0 /* APISkillsDataParser.swift */; };
+		B49B6B151E91924C00F1F03F /* ImageWithLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B6B141E91924C00F1F03F /* ImageWithLabelView.swift */; };
+		B49B6B171E91D58100F1F03F /* UIView+AddBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B6B161E91D58100F1F03F /* UIView+AddBorder.swift */; };
+		B4E564601E9C45E4005E1B01 /* MainViewController+GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E5645F1E9C45E4005E1B01 /* MainViewController+GetData.swift */; };
+		B4E564611E9E57C9005E1B01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B457C1941E8C0DC90038F3A0 /* Info.plist */; };
+		B4F1FD631ECB28B5000BF1CB /* ImageWithDescriptionInBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1FD621ECB28B5000BF1CB /* ImageWithDescriptionInBackgroundView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B457C1841E8C0DC90038F3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B457C1671E8C0DC90038F3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B457C16E1E8C0DC90038F3A0;
+			remoteInfo = "DominikReczek-CV";
+		};
+		B457C18F1E8C0DC90038F3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B457C1671E8C0DC90038F3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B457C16E1E8C0DC90038F3A0;
+			remoteInfo = "DominikReczek-CV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058EB1D9C551C6FEA208A262 /* Pods-DominikReczek-CV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DominikReczek-CV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DominikReczek-CV/Pods-DominikReczek-CV.debug.xcconfig"; sourceTree = "<group>"; };
+		816FB2E10F126BBE2833501C /* Pods-DominikReczek-CVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DominikReczek-CVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DominikReczek-CVTests/Pods-DominikReczek-CVTests.release.xcconfig"; sourceTree = "<group>"; };
+		980E8263916579FF77831D2D /* Pods_DominikReczek_CVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DominikReczek_CVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40CBBFA1ECC65E900B4F278 /* CustomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		B40CBBFB1ECC65E900B4F278 /* CustomUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIImageView.swift; sourceTree = "<group>"; };
+		B40CBBFC1ECC65E900B4F278 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		B40CBC011ECC662000B4F278 /* ContactInfoPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfoPopUpView.swift; sourceTree = "<group>"; };
+		B40CBC021ECC662000B4F278 /* PersonalInfoPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoPopUpView.swift; sourceTree = "<group>"; };
+		B40CBC051ECCAE3B00B4F278 /* ExperienceComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceComponentView.swift; sourceTree = "<group>"; };
+		B40FF5C11E8C126000A8636D /* ShapeShiftingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeShiftingProtocol.swift; sourceTree = "<group>"; };
+		B42111C71ECA0B9100478A66 /* ImageWithDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWithDescriptionView.swift; sourceTree = "<group>"; };
+		B42111C91ECA81ED00478A66 /* UILabel+SubstituteDefaultFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SubstituteDefaultFont.swift"; sourceTree = "<group>"; };
+		B457C16F1E8C0DC90038F3A0 /* DominikReczek-CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DominikReczek-CV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B457C1831E8C0DC90038F3A0 /* DominikReczek-CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DominikReczek-CVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B457C1871E8C0DC90038F3A0 /* DominikReczek_CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominikReczek_CVTests.swift; sourceTree = "<group>"; };
+		B457C1891E8C0DC90038F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B457C18E1E8C0DC90038F3A0 /* DominikReczek-CVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DominikReczek-CVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B457C1921E8C0DC90038F3A0 /* DominikReczek_CVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominikReczek_CVUITests.swift; sourceTree = "<group>"; };
+		B457C1941E8C0DC90038F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B457C1A11E8C0E7D0038F3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B457C1A21E8C0E7D0038F3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B457C1A41E8C0E7D0038F3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B457C1A51E8C0E7D0038F3A0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B457C1A61E8C0E7D0038F3A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B457C1AA1E8C0E7D0038F3A0 /* DescriptionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionLabel.swift; sourceTree = "<group>"; };
+		B457C1AD1E8C0E7D0038F3A0 /* ApperableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApperableProtocol.swift; sourceTree = "<group>"; };
+		B457C1AE1E8C0E7D0038F3A0 /* BlurableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurableProtocol.swift; sourceTree = "<group>"; };
+		B457C1B01E8C0E7D0038F3A0 /* UIBezierPath+PolygonMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+PolygonMask.swift"; sourceTree = "<group>"; };
+		B457C1B11E8C0E7D0038F3A0 /* UIView+LoadImageFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LoadImageFromURL.swift"; sourceTree = "<group>"; };
+		B457C1B41E8C0E7D0038F3A0 /* BasicDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDataViewController.swift; sourceTree = "<group>"; };
+		B457C1B51E8C0E7D0038F3A0 /* EducationDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationDataViewController.swift; sourceTree = "<group>"; };
+		B457C1B61E8C0E7D0038F3A0 /* ExperienceDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceDataViewController.swift; sourceTree = "<group>"; };
+		B457C1B71E8C0E7D0038F3A0 /* HobbysDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbysDataViewController.swift; sourceTree = "<group>"; };
+		B457C1B81E8C0E7D0038F3A0 /* SkillsViewDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewDataController.swift; sourceTree = "<group>"; };
+		B457C1B91E8C0E7D0038F3A0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B457C1BB1E8C0E7D0038F3A0 /* BasicDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDataView.swift; sourceTree = "<group>"; };
+		B457C1BC1E8C0E7D0038F3A0 /* EducationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		B457C1BD1E8C0E7D0038F3A0 /* ExperienceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		B457C1BE1E8C0E7D0038F3A0 /* HobbysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbysView.swift; sourceTree = "<group>"; };
+		B457C1BF1E8C0E7D0038F3A0 /* SkillsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		B457C1C11E8C0E7D0038F3A0 /* APIBasiclDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBasiclDataModel.swift; sourceTree = "<group>"; };
+		B457C1C21E8C0E7D0038F3A0 /* APIEducationDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEducationDataModel.swift; sourceTree = "<group>"; };
+		B457C1C31E8C0E7D0038F3A0 /* APIExperienceDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExperienceDataModel.swift; sourceTree = "<group>"; };
+		B457C1C41E8C0E7D0038F3A0 /* APIHobbysDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHobbysDataModel.swift; sourceTree = "<group>"; };
+		B457C1C51E8C0E7D0038F3A0 /* APIResultModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResultModelProtocol.swift; sourceTree = "<group>"; };
+		B457C1C61E8C0E7D0038F3A0 /* APISkillsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISkillsDataModel.swift; sourceTree = "<group>"; };
+		B457C1CF1E8C0E7D0038F3A0 /* APIBasicDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBasicDataManager.swift; sourceTree = "<group>"; };
+		B457C1D01E8C0E7D0038F3A0 /* APIEducationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEducationDataManager.swift; sourceTree = "<group>"; };
+		B457C1D11E8C0E7D0038F3A0 /* APIExeperienceDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExeperienceDataManager.swift; sourceTree = "<group>"; };
+		B457C1D21E8C0E7D0038F3A0 /* APIHobbysDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHobbysDataManager.swift; sourceTree = "<group>"; };
+		B457C1D31E8C0E7D0038F3A0 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B457C1D41E8C0E7D0038F3A0 /* APIManagerProtocol+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIManagerProtocol+Request.swift"; sourceTree = "<group>"; };
+		B457C1D51E8C0E7D0038F3A0 /* APIManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerProtocol.swift; sourceTree = "<group>"; };
+		B457C1D61E8C0E7D0038F3A0 /* APISkillsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISkillsDataManager.swift; sourceTree = "<group>"; };
+		B457C1D81E8C0E7D0038F3A0 /* APIBasicDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBasicDataParser.swift; sourceTree = "<group>"; };
+		B457C1D91E8C0E7D0038F3A0 /* APIEducationDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEducationDataParser.swift; sourceTree = "<group>"; };
+		B457C1DA1E8C0E7D0038F3A0 /* APIExperienceDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExperienceDataParser.swift; sourceTree = "<group>"; };
+		B457C1DB1E8C0E7D0038F3A0 /* APIHobbysDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHobbysDataParser.swift; sourceTree = "<group>"; };
+		B457C1DC1E8C0E7D0038F3A0 /* APIResultParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResultParserProtocol.swift; sourceTree = "<group>"; };
+		B457C1DD1E8C0E7D0038F3A0 /* APISkillsDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISkillsDataParser.swift; sourceTree = "<group>"; };
+		B49B6B141E91924C00F1F03F /* ImageWithLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWithLabelView.swift; sourceTree = "<group>"; };
+		B49B6B161E91D58100F1F03F /* UIView+AddBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddBorder.swift"; sourceTree = "<group>"; };
+		B4E5645F1E9C45E4005E1B01 /* MainViewController+GetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+GetData.swift"; sourceTree = "<group>"; };
+		B4F1FD621ECB28B5000BF1CB /* ImageWithDescriptionInBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWithDescriptionInBackgroundView.swift; sourceTree = "<group>"; };
+		B6A21DF13DA0102A40A5B48E /* Pods-DominikReczek-CVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DominikReczek-CVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DominikReczek-CVTests/Pods-DominikReczek-CVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F6DAF70CD06C6D7EC0C3EE /* Pods-DominikReczek-CV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DominikReczek-CV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DominikReczek-CV/Pods-DominikReczek-CV.release.xcconfig"; sourceTree = "<group>"; };
+		BDA53623E898E7208CB51F68 /* Pods-DominikReczek-CVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DominikReczek-CVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DominikReczek-CVUITests/Pods-DominikReczek-CVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D22E370ACE2A099CD503C7BC /* Pods_DominikReczek_CVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DominikReczek_CVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FE95EBCD860077CEE21712 /* Pods_DominikReczek_CV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DominikReczek_CV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53E250D5BD8F7626197BC72 /* Pods-DominikReczek-CVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DominikReczek-CVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DominikReczek-CVUITests/Pods-DominikReczek-CVUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B457C16C1E8C0DC90038F3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3399E766D7899946275E71 /* Pods_DominikReczek_CV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B457C1801E8C0DC90038F3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894C2E875721823430DFF82D /* Pods_DominikReczek_CVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B457C18B1E8C0DC90038F3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A8ECD8D171C77BE1C56AFC /* Pods_DominikReczek_CVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B40CBBF91ECC65E900B4F278 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				B40CBBFA1ECC65E900B4F278 /* CustomUIButton.swift */,
+				B40CBBFB1ECC65E900B4F278 /* CustomUIImageView.swift */,
+				B40CBBFC1ECC65E900B4F278 /* CustomUIView.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		B40CBC001ECC662000B4F278 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				B40CBC011ECC662000B4F278 /* ContactInfoPopUpView.swift */,
+				B40CBC021ECC662000B4F278 /* PersonalInfoPopUpView.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		B457C1661E8C0DC90038F3A0 = {
+			isa = PBXGroup;
+			children = (
+				B457C1711E8C0DC90038F3A0 /* DominikReczek-CV */,
+				B457C1861E8C0DC90038F3A0 /* DominikReczek-CVTests */,
+				B457C1911E8C0DC90038F3A0 /* DominikReczek-CVUITests */,
+				B457C1701E8C0DC90038F3A0 /* Products */,
+				D8A564B57415B0BE6DA660FA /* Pods */,
+				FD5018D9F0ADB165824572FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B457C1701E8C0DC90038F3A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B457C16F1E8C0DC90038F3A0 /* DominikReczek-CV.app */,
+				B457C1831E8C0DC90038F3A0 /* DominikReczek-CVTests.xctest */,
+				B457C18E1E8C0DC90038F3A0 /* DominikReczek-CVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B457C1711E8C0DC90038F3A0 /* DominikReczek-CV */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1CD1E8C0E7D0038F3A0 /* API */,
+				B457C1C01E8C0E7D0038F3A0 /* Models */,
+				B457C1B21E8C0E7D0038F3A0 /* Main */,
+				B457C1AC1E8C0E7D0038F3A0 /* Protocols */,
+				B457C1AF1E8C0E7D0038F3A0 /* Extensions */,
+				B457C1A71E8C0E7D0038F3A0 /* Components */,
+				B457C1A01E8C0E7D0038F3A0 /* Resources */,
+			);
+			path = "DominikReczek-CV";
+			sourceTree = "<group>";
+		};
+		B457C1861E8C0DC90038F3A0 /* DominikReczek-CVTests */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1871E8C0DC90038F3A0 /* DominikReczek_CVTests.swift */,
+				B457C1891E8C0DC90038F3A0 /* Info.plist */,
+			);
+			path = "DominikReczek-CVTests";
+			sourceTree = "<group>";
+		};
+		B457C1911E8C0DC90038F3A0 /* DominikReczek-CVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1921E8C0DC90038F3A0 /* DominikReczek_CVUITests.swift */,
+				B457C1941E8C0DC90038F3A0 /* Info.plist */,
+			);
+			path = "DominikReczek-CVUITests";
+			sourceTree = "<group>";
+		};
+		B457C1A01E8C0E7D0038F3A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1A11E8C0E7D0038F3A0 /* AppDelegate.swift */,
+				B457C1A21E8C0E7D0038F3A0 /* Assets.xcassets */,
+				B457C1A31E8C0E7D0038F3A0 /* LaunchScreen.storyboard */,
+				B457C1A51E8C0E7D0038F3A0 /* Info.plist */,
+				B457C1A61E8C0E7D0038F3A0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B457C1A71E8C0E7D0038F3A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B40CBBF91ECC65E900B4F278 /* Default */,
+				B40CBC001ECC662000B4F278 /* PopUp */,
+				B457C1AA1E8C0E7D0038F3A0 /* DescriptionLabel.swift */,
+				B49B6B141E91924C00F1F03F /* ImageWithLabelView.swift */,
+				B42111C71ECA0B9100478A66 /* ImageWithDescriptionView.swift */,
+				B4F1FD621ECB28B5000BF1CB /* ImageWithDescriptionInBackgroundView.swift */,
+				B40CBC051ECCAE3B00B4F278 /* ExperienceComponentView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B457C1AC1E8C0E7D0038F3A0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1AD1E8C0E7D0038F3A0 /* ApperableProtocol.swift */,
+				B457C1AE1E8C0E7D0038F3A0 /* BlurableProtocol.swift */,
+				B40FF5C11E8C126000A8636D /* ShapeShiftingProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B457C1AF1E8C0E7D0038F3A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1B11E8C0E7D0038F3A0 /* UIView+LoadImageFromURL.swift */,
+				B457C1B01E8C0E7D0038F3A0 /* UIBezierPath+PolygonMask.swift */,
+				B49B6B161E91D58100F1F03F /* UIView+AddBorder.swift */,
+				B42111C91ECA81ED00478A66 /* UILabel+SubstituteDefaultFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B457C1B21E8C0E7D0038F3A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1B91E8C0E7D0038F3A0 /* MainViewController.swift */,
+				B4E5645F1E9C45E4005E1B01 /* MainViewController+GetData.swift */,
+				B457C1B31E8C0E7D0038F3A0 /* Controllers */,
+				B457C1BA1E8C0E7D0038F3A0 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B457C1B31E8C0E7D0038F3A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1B41E8C0E7D0038F3A0 /* BasicDataViewController.swift */,
+				B457C1B61E8C0E7D0038F3A0 /* ExperienceDataViewController.swift */,
+				B457C1B51E8C0E7D0038F3A0 /* EducationDataViewController.swift */,
+				B457C1B81E8C0E7D0038F3A0 /* SkillsViewDataController.swift */,
+				B457C1B71E8C0E7D0038F3A0 /* HobbysDataViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B457C1BA1E8C0E7D0038F3A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1BB1E8C0E7D0038F3A0 /* BasicDataView.swift */,
+				B457C1BD1E8C0E7D0038F3A0 /* ExperienceView.swift */,
+				B457C1BC1E8C0E7D0038F3A0 /* EducationView.swift */,
+				B457C1BF1E8C0E7D0038F3A0 /* SkillsView.swift */,
+				B457C1BE1E8C0E7D0038F3A0 /* HobbysView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B457C1C01E8C0E7D0038F3A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1C51E8C0E7D0038F3A0 /* APIResultModelProtocol.swift */,
+				B457C1C11E8C0E7D0038F3A0 /* APIBasiclDataModel.swift */,
+				B457C1C31E8C0E7D0038F3A0 /* APIExperienceDataModel.swift */,
+				B457C1C21E8C0E7D0038F3A0 /* APIEducationDataModel.swift */,
+				B457C1C61E8C0E7D0038F3A0 /* APISkillsDataModel.swift */,
+				B457C1C41E8C0E7D0038F3A0 /* APIHobbysDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B457C1CD1E8C0E7D0038F3A0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1CE1E8C0E7D0038F3A0 /* Managers */,
+				B457C1D71E8C0E7D0038F3A0 /* Parsers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B457C1CE1E8C0E7D0038F3A0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1D51E8C0E7D0038F3A0 /* APIManagerProtocol.swift */,
+				B457C1D31E8C0E7D0038F3A0 /* APIManager.swift */,
+				B457C1D41E8C0E7D0038F3A0 /* APIManagerProtocol+Request.swift */,
+				B457C1CF1E8C0E7D0038F3A0 /* APIBasicDataManager.swift */,
+				B457C1D11E8C0E7D0038F3A0 /* APIExeperienceDataManager.swift */,
+				B457C1D01E8C0E7D0038F3A0 /* APIEducationDataManager.swift */,
+				B457C1D61E8C0E7D0038F3A0 /* APISkillsDataManager.swift */,
+				B457C1D21E8C0E7D0038F3A0 /* APIHobbysDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B457C1D71E8C0E7D0038F3A0 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				B457C1DC1E8C0E7D0038F3A0 /* APIResultParserProtocol.swift */,
+				B457C1D81E8C0E7D0038F3A0 /* APIBasicDataParser.swift */,
+				B457C1DA1E8C0E7D0038F3A0 /* APIExperienceDataParser.swift */,
+				B457C1D91E8C0E7D0038F3A0 /* APIEducationDataParser.swift */,
+				B457C1DD1E8C0E7D0038F3A0 /* APISkillsDataParser.swift */,
+				B457C1DB1E8C0E7D0038F3A0 /* APIHobbysDataParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		D8A564B57415B0BE6DA660FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				058EB1D9C551C6FEA208A262 /* Pods-DominikReczek-CV.debug.xcconfig */,
+				B9F6DAF70CD06C6D7EC0C3EE /* Pods-DominikReczek-CV.release.xcconfig */,
+				B6A21DF13DA0102A40A5B48E /* Pods-DominikReczek-CVTests.debug.xcconfig */,
+				816FB2E10F126BBE2833501C /* Pods-DominikReczek-CVTests.release.xcconfig */,
+				BDA53623E898E7208CB51F68 /* Pods-DominikReczek-CVUITests.debug.xcconfig */,
+				E53E250D5BD8F7626197BC72 /* Pods-DominikReczek-CVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD5018D9F0ADB165824572FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE95EBCD860077CEE21712 /* Pods_DominikReczek_CV.framework */,
+				980E8263916579FF77831D2D /* Pods_DominikReczek_CVTests.framework */,
+				D22E370ACE2A099CD503C7BC /* Pods_DominikReczek_CVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B457C16E1E8C0DC90038F3A0 /* DominikReczek-CV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B457C1971E8C0DC90038F3A0 /* Build configuration list for PBXNativeTarget "DominikReczek-CV" */;
+			buildPhases = (
+				307CE19276336CAEB7144EBA /* [CP] Check Pods Manifest.lock */,
+				B457C16B1E8C0DC90038F3A0 /* Sources */,
+				B457C16C1E8C0DC90038F3A0 /* Frameworks */,
+				B457C16D1E8C0DC90038F3A0 /* Resources */,
+				E79D6675989FC23A9B542B49 /* [CP] Embed Pods Frameworks */,
+				9638BB735EDED55524905A50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DominikReczek-CV";
+			productName = "DominikReczek-CV";
+			productReference = B457C16F1E8C0DC90038F3A0 /* DominikReczek-CV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B457C1821E8C0DC90038F3A0 /* DominikReczek-CVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B457C19A1E8C0DC90038F3A0 /* Build configuration list for PBXNativeTarget "DominikReczek-CVTests" */;
+			buildPhases = (
+				AFCC1245D05E84C601924BD3 /* [CP] Check Pods Manifest.lock */,
+				B457C17F1E8C0DC90038F3A0 /* Sources */,
+				B457C1801E8C0DC90038F3A0 /* Frameworks */,
+				B457C1811E8C0DC90038F3A0 /* Resources */,
+				16E6D0A83BDA0BD69EF59428 /* [CP] Embed Pods Frameworks */,
+				D8C13322D0E8930F8C9FF3EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B457C1851E8C0DC90038F3A0 /* PBXTargetDependency */,
+			);
+			name = "DominikReczek-CVTests";
+			productName = "DominikReczek-CVTests";
+			productReference = B457C1831E8C0DC90038F3A0 /* DominikReczek-CVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B457C18D1E8C0DC90038F3A0 /* DominikReczek-CVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B457C19D1E8C0DC90038F3A0 /* Build configuration list for PBXNativeTarget "DominikReczek-CVUITests" */;
+			buildPhases = (
+				F0318E7ABED706E349ECA9C7 /* [CP] Check Pods Manifest.lock */,
+				B457C18A1E8C0DC90038F3A0 /* Sources */,
+				B457C18B1E8C0DC90038F3A0 /* Frameworks */,
+				B457C18C1E8C0DC90038F3A0 /* Resources */,
+				9F2AF13CAD6C3EC467391C93 /* [CP] Embed Pods Frameworks */,
+				EEC5B4ED4CA0DAC2A790AE52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B457C1901E8C0DC90038F3A0 /* PBXTargetDependency */,
+			);
+			name = "DominikReczek-CVUITests";
+			productName = "DominikReczek-CVUITests";
+			productReference = B457C18E1E8C0DC90038F3A0 /* DominikReczek-CVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B457C1671E8C0DC90038F3A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dominik Reczek";
+				TargetAttributes = {
+					B457C16E1E8C0DC90038F3A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8BA4XK6Q7R;
+						ProvisioningStyle = Automatic;
+					};
+					B457C1821E8C0DC90038F3A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8BA4XK6Q7R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B457C16E1E8C0DC90038F3A0;
+					};
+					B457C18D1E8C0DC90038F3A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8BA4XK6Q7R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B457C16E1E8C0DC90038F3A0;
+					};
+				};
+			};
+			buildConfigurationList = B457C16A1E8C0DC90038F3A0 /* Build configuration list for PBXProject "DominikReczek-CV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B457C1661E8C0DC90038F3A0;
+			productRefGroup = B457C1701E8C0DC90038F3A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B457C16E1E8C0DC90038F3A0 /* DominikReczek-CV */,
+				B457C1821E8C0DC90038F3A0 /* DominikReczek-CVTests */,
+				B457C18D1E8C0DC90038F3A0 /* DominikReczek-CVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B457C16D1E8C0DC90038F3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E564611E9E57C9005E1B01 /* Info.plist in Resources */,
+				B457C1DF1E8C0E7D0038F3A0 /* Assets.xcassets in Resources */,
+				B457C1E21E8C0E7D0038F3A0 /* LaunchScreen.storyboard in Resources */,
+				B457C1E01E8C0E7D0038F3A0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B457C1811E8C0DC90038F3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B457C18C1E8C0DC90038F3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E6D0A83BDA0BD69EF59428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DominikReczek-CVTests/Pods-DominikReczek-CVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		307CE19276336CAEB7144EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9638BB735EDED55524905A50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DominikReczek-CV/Pods-DominikReczek-CV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2AF13CAD6C3EC467391C93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DominikReczek-CVUITests/Pods-DominikReczek-CVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCC1245D05E84C601924BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C13322D0E8930F8C9FF3EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DominikReczek-CVTests/Pods-DominikReczek-CVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E79D6675989FC23A9B542B49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DominikReczek-CV/Pods-DominikReczek-CV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC5B4ED4CA0DAC2A790AE52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DominikReczek-CVUITests/Pods-DominikReczek-CVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0318E7ABED706E349ECA9C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B457C16B1E8C0DC90038F3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40FF5C21E8C126000A8636D /* ShapeShiftingProtocol.swift in Sources */,
+				B457C1E71E8C0E7D0038F3A0 /* ApperableProtocol.swift in Sources */,
+				B42111C81ECA0B9100478A66 /* ImageWithDescriptionView.swift in Sources */,
+				B40CBBFF1ECC65E900B4F278 /* CustomUIView.swift in Sources */,
+				B40CBBFE1ECC65E900B4F278 /* CustomUIImageView.swift in Sources */,
+				B457C1DE1E8C0E7D0038F3A0 /* AppDelegate.swift in Sources */,
+				B40CBC061ECCAE3B00B4F278 /* ExperienceComponentView.swift in Sources */,
+				B457C1E91E8C0E7D0038F3A0 /* UIBezierPath+PolygonMask.swift in Sources */,
+				B457C1F21E8C0E7E0038F3A0 /* EducationView.swift in Sources */,
+				B457C2081E8C0E7E0038F3A0 /* APIEducationDataParser.swift in Sources */,
+				B457C1FF1E8C0E7E0038F3A0 /* APIBasicDataManager.swift in Sources */,
+				B457C1F11E8C0E7E0038F3A0 /* BasicDataView.swift in Sources */,
+				B457C2051E8C0E7E0038F3A0 /* APIManagerProtocol.swift in Sources */,
+				B457C1EC1E8C0E7D0038F3A0 /* EducationDataViewController.swift in Sources */,
+				B457C1ED1E8C0E7D0038F3A0 /* ExperienceDataViewController.swift in Sources */,
+				B457C2061E8C0E7E0038F3A0 /* APISkillsDataManager.swift in Sources */,
+				B457C2031E8C0E7E0038F3A0 /* APIManager.swift in Sources */,
+				B457C2091E8C0E7E0038F3A0 /* APIExperienceDataParser.swift in Sources */,
+				B457C1EF1E8C0E7D0038F3A0 /* SkillsViewDataController.swift in Sources */,
+				B457C1F71E8C0E7E0038F3A0 /* APIEducationDataModel.swift in Sources */,
+				B40CBBFD1ECC65E900B4F278 /* CustomUIButton.swift in Sources */,
+				B4E564601E9C45E4005E1B01 /* MainViewController+GetData.swift in Sources */,
+				B457C2001E8C0E7E0038F3A0 /* APIEducationDataManager.swift in Sources */,
+				B457C1F61E8C0E7E0038F3A0 /* APIBasiclDataModel.swift in Sources */,
+				B457C1FA1E8C0E7E0038F3A0 /* APIResultModelProtocol.swift in Sources */,
+				B457C1F01E8C0E7D0038F3A0 /* MainViewController.swift in Sources */,
+				B457C20A1E8C0E7E0038F3A0 /* APIHobbysDataParser.swift in Sources */,
+				B457C20B1E8C0E7E0038F3A0 /* APIResultParserProtocol.swift in Sources */,
+				B457C1F31E8C0E7E0038F3A0 /* ExperienceView.swift in Sources */,
+				B457C1F91E8C0E7E0038F3A0 /* APIHobbysDataModel.swift in Sources */,
+				B457C2011E8C0E7E0038F3A0 /* APIExeperienceDataManager.swift in Sources */,
+				B457C1EE1E8C0E7D0038F3A0 /* HobbysDataViewController.swift in Sources */,
+				B457C1FB1E8C0E7E0038F3A0 /* APISkillsDataModel.swift in Sources */,
+				B457C1E51E8C0E7D0038F3A0 /* DescriptionLabel.swift in Sources */,
+				B457C1F41E8C0E7E0038F3A0 /* HobbysView.swift in Sources */,
+				B40CBC041ECC662000B4F278 /* PersonalInfoPopUpView.swift in Sources */,
+				B457C2071E8C0E7E0038F3A0 /* APIBasicDataParser.swift in Sources */,
+				B457C2041E8C0E7E0038F3A0 /* APIManagerProtocol+Request.swift in Sources */,
+				B457C1F81E8C0E7E0038F3A0 /* APIExperienceDataModel.swift in Sources */,
+				B457C1F51E8C0E7E0038F3A0 /* SkillsView.swift in Sources */,
+				B42111CA1ECA81ED00478A66 /* UILabel+SubstituteDefaultFont.swift in Sources */,
+				B49B6B151E91924C00F1F03F /* ImageWithLabelView.swift in Sources */,
+				B49B6B171E91D58100F1F03F /* UIView+AddBorder.swift in Sources */,
+				B4F1FD631ECB28B5000BF1CB /* ImageWithDescriptionInBackgroundView.swift in Sources */,
+				B457C20C1E8C0E7E0038F3A0 /* APISkillsDataParser.swift in Sources */,
+				B457C1EB1E8C0E7D0038F3A0 /* BasicDataViewController.swift in Sources */,
+				B40CBC031ECC662000B4F278 /* ContactInfoPopUpView.swift in Sources */,
+				B457C2021E8C0E7E0038F3A0 /* APIHobbysDataManager.swift in Sources */,
+				B457C1E81E8C0E7D0038F3A0 /* BlurableProtocol.swift in Sources */,
+				B457C1EA1E8C0E7D0038F3A0 /* UIView+LoadImageFromURL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B457C17F1E8C0DC90038F3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B457C1881E8C0DC90038F3A0 /* DominikReczek_CVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B457C18A1E8C0DC90038F3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B457C1931E8C0DC90038F3A0 /* DominikReczek_CVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B457C1851E8C0DC90038F3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B457C16E1E8C0DC90038F3A0 /* DominikReczek-CV */;
+			targetProxy = B457C1841E8C0DC90038F3A0 /* PBXContainerItemProxy */;
+		};
+		B457C1901E8C0DC90038F3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B457C16E1E8C0DC90038F3A0 /* DominikReczek-CV */;
+			targetProxy = B457C18F1E8C0DC90038F3A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B457C1A31E8C0E7D0038F3A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B457C1A41E8C0E7D0038F3A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B457C1951E8C0DC90038F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B457C1961E8C0DC90038F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B457C1981E8C0DC90038F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058EB1D9C551C6FEA208A262 /* Pods-DominikReczek-CV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8BA4XK6Q7R;
+				INFOPLIST_FILE = "$(SRCROOT)/DominikReczek-CV/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominik-Reczek.DominikReczek-CV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B457C1991E8C0DC90038F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F6DAF70CD06C6D7EC0C3EE /* Pods-DominikReczek-CV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8BA4XK6Q7R;
+				INFOPLIST_FILE = "$(SRCROOT)/DominikReczek-CV/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominik-Reczek.DominikReczek-CV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B457C19B1E8C0DC90038F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A21DF13DA0102A40A5B48E /* Pods-DominikReczek-CVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8BA4XK6Q7R;
+				INFOPLIST_FILE = "DominikReczek-CVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominik-Reczek.DominikReczek-CVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DominikReczek-CV.app/DominikReczek-CV";
+			};
+			name = Debug;
+		};
+		B457C19C1E8C0DC90038F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816FB2E10F126BBE2833501C /* Pods-DominikReczek-CVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8BA4XK6Q7R;
+				INFOPLIST_FILE = "DominikReczek-CVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominik-Reczek.DominikReczek-CVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DominikReczek-CV.app/DominikReczek-CV";
+			};
+			name = Release;
+		};
+		B457C19E1E8C0DC90038F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA53623E898E7208CB51F68 /* Pods-DominikReczek-CVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8BA4XK6Q7R;
+				INFOPLIST_FILE = "DominikReczek-CVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominik-Reczek.DominikReczek-CVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "DominikReczek-CV";
+			};
+			name = Debug;
+		};
+		B457C19F1E8C0DC90038F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53E250D5BD8F7626197BC72 /* Pods-DominikReczek-CVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8BA4XK6Q7R;
+				INFOPLIST_FILE = "DominikReczek-CVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominik-Reczek.DominikReczek-CVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "DominikReczek-CV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B457C16A1E8C0DC90038F3A0 /* Build configuration list for PBXProject "DominikReczek-CV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B457C1951E8C0DC90038F3A0 /* Debug */,
+				B457C1961E8C0DC90038F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B457C1971E8C0DC90038F3A0 /* Build configuration list for PBXNativeTarget "DominikReczek-CV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B457C1981E8C0DC90038F3A0 /* Debug */,
+				B457C1991E8C0DC90038F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B457C19A1E8C0DC90038F3A0 /* Build configuration list for PBXNativeTarget "DominikReczek-CVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B457C19B1E8C0DC90038F3A0 /* Debug */,
+				B457C19C1E8C0DC90038F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B457C19D1E8C0DC90038F3A0 /* Build configuration list for PBXNativeTarget "DominikReczek-CVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B457C19E1E8C0DC90038F3A0 /* Debug */,
+				B457C19F1E8C0DC90038F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B457C1671E8C0DC90038F3A0 /* Project object */;
+}

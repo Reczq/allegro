@@ -1,0 +1,6 @@
+framework module Pods_DominikReczek_CVUITests {
+  umbrella header "Pods-DominikReczek-CVUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

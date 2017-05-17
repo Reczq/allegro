@@ -1,0 +1,6 @@
+framework module Pods_DominikReczek_CV {
+  umbrella header "Pods-DominikReczek-CV-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+use_frameworks!
+
+def pods
+	pod 'SnapKit', '~> 3.0'
+	pod 'Alamofire', '~> 4.0'
+	pod 'AlamofireImage', '~> 3.1'
+	pod 'SwiftyJSON'
+end
+
+target 'DominikReczek-CVTests' do
+	inherit! :search_paths
+end
+
+target 'DominikReczek-CVUITests' do
+    inherit! :search_paths
+end
+
+target 'DominikReczek-CV' do
+	pods
+end
